@@ -7,5 +7,5 @@ foo.*
 *.log
 data
 .DS_Store
-./scripts
-./scripts/*
+./scripts*
+log.txt
