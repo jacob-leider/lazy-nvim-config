@@ -1,21 +1,9 @@
-print("LOADING BLINK CMP SPEC")
-
 return {
   "saghen/blink.cmp",
   version = "*",
-  opts = {
-    keymap = {
+  opts = function(_, opts)
+    opts.keymap = {
       preset = "super-tab",
-    },
-  },
+    }
+  end,
 }
-
---return {
---  "saghen/blink.cmp",
---  version = "*",
---  opts = function(_, opts)
---    opts.keymap = {
---      preset = "super-tab",
---    }
---  end,
---}
