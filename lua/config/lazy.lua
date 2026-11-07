@@ -18,8 +18,11 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
-    -- import/override with your plugins
+    -- TODO: Create a function that recursively generates a list of
+    -- subdirectories. Otherwise you have to add a new entry every time you
+    -- create a new plugin spec subdirectory.
     { import = "plugins" },
+    { import = "plugins.blink" },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
